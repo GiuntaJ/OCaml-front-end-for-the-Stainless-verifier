@@ -10,6 +10,7 @@ For more informations about Stainless : <https://stainless.epfl.ch/>
 
 To translate your OCaml programs, you need to: 
   * Install Camlp5 (see <https://github.com/camlp5/camlp5>).
+  * Install OCaml so that you can use `ocamlc`.
   * Install Scala so that you can use `scalac`.
   * Run the shell script with the command: 
    ```$ sh ocaml_to_scala.sh path/to/the/file/to/translate.ml```
