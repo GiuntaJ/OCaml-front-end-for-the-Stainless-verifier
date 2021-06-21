@@ -1,0 +1,9 @@
+let fun1 a = 10;;
+let fun2 a b = a + b;;
+let fun3 a b c = a + b + c;;
+let fun_generic a = a;;
+let fun_generic_2 a b c = b;;
+let apply1 = fun1 1;;
+let apply2 = fun1 (1 + 2);;
+let apply3 = fun2 1 2;;
+let apply4 = fun2 ((-) 1 2) (2 * 3 + 1);;

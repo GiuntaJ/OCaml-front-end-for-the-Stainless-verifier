@@ -1,0 +1,9 @@
+let list = ['a'];;
+let list_of_list = [['a']; ['b']];;
+let list_of_tuple = [(10, true)];;
+let list_cons = 'a' :: list;;
+let list_cons_2 = 1 :: (1 + 2) :: [];;
+let list_cons_3 = 'a' :: 'b' :: ['c'; 'd'];;
+let list_cons_4 = 'a' :: list_cons_3;;
+let list_concat_1 = ['a'; 'b'] @ ['c'; 'd'];;
+let list_concat_2 = 'a' :: list_concat_1 @ [];;
