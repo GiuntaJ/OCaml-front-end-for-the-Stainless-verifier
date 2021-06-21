@@ -14,3 +14,11 @@ To translate your OCaml programs, you need to:
   * Install Scala so that you can use `scalac`.
   * Run the shell script with the command: 
    ```$ sh ocaml_to_scala.sh path/to/the/file/to/translate.ml```
+
+To compile your code with Scala you can use:
+
+```$ scalac $(find /your/path/to/stainless/frontends/library/stainless -name "*.scala") YourScalaFile.scala```
+
+You can also run Stainless on the new Scala file.
+Pay attention to the fact that if you are using mutable objects (arrays or records), you might need to wrap the code that uses it in a function.
+You also need to type the parameters of your functions that are defined with 'let ... in'.
