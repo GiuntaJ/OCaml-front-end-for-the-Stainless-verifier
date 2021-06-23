@@ -1,0 +1,12 @@
+import stainless.collection._
+import stainless.io.StdOut._
+import stainless.lang._
+import stainless.math._
+import stainless.math.BitVectors._
+
+object benchmarks_iter_iter1_sub255 {
+  /* 컴퓨터공학과/2017-34165/김성국/1-3 */
+  def iter(((n, f))) = {
+    if (n <= 0) ( (x) => { x } ) else ( (x) => { f(iter(n - 1, f, x)) } )
+  }
+}

@@ -1,0 +1,27 @@
+import stainless.collection._
+import stainless.io.StdOut._
+import stainless.lang._
+import stainless.math._
+import stainless.math.BitVectors._
+
+object benchmarks_sigma_sigma2_sub2 {
+  sealed case class WrongInput() extends Exception {}
+  
+  /* Problem 2 */
+  def sigma: (Int63 => Int63, Int63, Int63) => Int63 = {
+    case (f, a, b) =>
+      {
+        
+          if (
+            a > b
+          ) {
+            assert(false, "WrongInput") 
+          } else {
+            b - a match {
+              case 0 => { f(a) }
+              case _ => { sigma(f, a + 1, b) + f(a) }
+            }
+          }
+    }
+  }
+}
