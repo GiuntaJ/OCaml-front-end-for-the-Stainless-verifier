@@ -14,21 +14,20 @@ let record_copie =
   { record_value with 
         field1 = 'c'};;
 
-type complex_record_type =
+type mutable_record_type =
   { normal_field: char;
     mutable mutable_field: string
   };;
-let complex_record_value = 
+let mutable_record_value = 
   { normal_field = 'a';
-      mutable_field = "abc"
+    mutable_field = "abc"
   };;
-let complex_record_assign_to_mutable = 
-  complex_record_value.mutable_field <- 
-    complex_record_value.mutable_field ^ "def";;
+let mutable_record_assign_to_mutable = 
+  mutable_record_value.mutable_field <- 
+    mutable_record_value.mutable_field ^ "def";;
 
 type record_one_line = {test: string; test2 : int};;
 let record_one_line_value = {test = "abc"; test2 = 1};;
-
 
 type user =
     { port: int;

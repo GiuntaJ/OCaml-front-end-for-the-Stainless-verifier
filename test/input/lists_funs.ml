@@ -1,5 +1,5 @@
 let list = ['a'];;
-(*let list_length = List.length list;;*)
+let list_length = List.length list;;
 let list_cons = List.cons 'b' list;;
 let list_head = List.hd list;;
 let list_tail = List.tl list;;
